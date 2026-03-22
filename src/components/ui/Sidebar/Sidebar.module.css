@@ -1,4 +1,6 @@
 .sideBar {
+  /* position: fixed; */
+
   width: 25%;
   height: 100vh;
   background-color: #f8fafc;
@@ -8,6 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  overflow-y: auto;
 }
 .sideBarTitle {
   /* background-color: tomato; */
