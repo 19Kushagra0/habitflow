@@ -1,39 +1,21 @@
 .sideBar {
-  /* position: fixed; */
-
   width: 25%;
   height: 100vh;
-  background-color: #f8fafc;
 
   padding: 24px;
+  padding-left: 48px;
+  padding-top: 75px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   overflow-y: auto;
+
+  background-color: #f7f9ff;
+  /* background-color: darkgoldenrod; */
 }
-.sideBarTitle {
-  /* background-color: tomato; */
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -1.2px;
 
-  color: #007a7c;
-
-  margin-bottom: 4px;
-}
-.sideBarSubTitle {
-  /* background-color: brown; */
-
-  font-weight: medium;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.3px;
-
-  color: #576069;
-}
 .sideBarNav {
   width: 100%;
 
@@ -59,7 +41,7 @@
 
   border-radius: 20px;
 
-  color: #007a7c;
+  /* color: #007a7c; */
 
   color: #64748b;
 }
@@ -76,4 +58,52 @@
 
   color: #64748b;
   /* background-color: #007a7c; */
+}
+@media screen and (max-width: 1285px) {
+  .sideBar {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1185px) {
+  .sideBar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sideBar {
+    width: fit-content;
+    width: 15%;
+
+    align-items: center;
+    padding-right: 0%;
+  }
+  .navText {
+    display: none;
+  }
+  .sideBarNav {
+    align-items: center;
+  }
+  .navLink {
+    width: fit-content;
+  }
+  .navLink {
+    padding: 12px;
+  }
+  .navLink:hover {
+    background-color: #007a7c;
+  }
+  .navLink:hover .navIcon {
+    color: #e8eef7;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navLink {
+    padding: 10px;
+  }
+  .sideBar {
+    display: none;
+  }
 }

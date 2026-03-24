@@ -5,19 +5,32 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <h1 className={styles.headerGreeting}>Welcome, User</h1>
-      <div className={styles.headerOptions}>
-        <div className={styles.headerOption}>
-          <Image src="/icons/Search.svg" alt="Search" width={18} height={18} />
+      <div className={styles.headerText}>
+        <div className={styles.headerTitle}>
+          <div className={styles.hamburger}>
+            <Image
+              src="/icons/hamburger.svg"
+              alt="Hamburger"
+              width={18}
+              height={18}
+              className="cursor-pointer"
+            />
+          </div>
+          <h1 className={styles.headerTitle}>HabitFlow</h1>
+          <h2 className={styles.headerSubTitle}>The Mindful Architect</h2>
         </div>
-        <div className={styles.headerOption}>
+        <h1 className={styles.headerGreeting}>Welcome, User</h1>
+      </div>
+
+      <div className={styles.headerOptions}>
+        {/* <div className={styles.headerOption}>
           <Image
             src="/icons/Notification.svg"
             alt="Notification"
-            width={16}
-            height={20}
+            width={14}
+            height={14}
           />
-        </div>
+        </div> */}
         <div>
           <Image
             src="/icons/profile.svg"

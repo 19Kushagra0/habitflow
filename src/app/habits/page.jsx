@@ -1,7 +1,7 @@
-import styles from "./components/Dashboard.module.css";
+import Habits from "./components/Habits";
+import styles from "@/app/dashboard/components/Dashboard.module.css";
 import Sidebar from "@/components/ui/Sidebar/Sidebar";
 import Header from "@/components/ui/Header/Header";
-import Dashboard from "./components/Dashboard";
 
 export default function page() {
   return (
@@ -10,7 +10,7 @@ export default function page() {
       <div className={styles.dashboardContainer}>
         <Sidebar />
         <div className={styles.mainContent}>
-          <Dashboard />
+          <Habits />
         </div>
       </div>
     </div>

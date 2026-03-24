@@ -30,7 +30,7 @@ export default function Dashboard() {
               height={18}
             />
           </div>
-          <br />
+          <br className={styles.hidden} />
 
           <div className={styles.statusRow}>
             <h2>
