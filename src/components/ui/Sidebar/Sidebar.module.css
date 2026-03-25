@@ -77,9 +77,10 @@
 @media screen and (max-width: 800px) {
   .sideBar {
     width: fit-content;
+    width: 130px;
     width: 15%;
 
-    align-items: center;
+    align-items: start;
     padding-right: 0%;
   }
   .navText {
@@ -93,6 +94,8 @@
   }
   .navLink {
     padding: 12px;
+
+    border-radius: 15px;
   }
   .navLink:hover {
     background-color: #007a7c;
