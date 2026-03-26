@@ -2,6 +2,7 @@
   width: 100%;
   height: 200vh;
   background-color: red;
+  background-color: #f7f9ff;
 
   display: flex;
   flex-direction: row;
@@ -9,20 +10,20 @@
   overflow-y: auto;
   padding: 0px 48px;
 
-  padding-top: 100px;
+  padding-top: 110px;
 
   gap: 32px;
 }
 .habitsPageLeft {
   width: 70%;
-  background-color: green;
+  /* background-color: green; */
 
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .inputHabitContainer {
-  background-color: salmon;
+  /* background-color: salmon; */
   display: flex;
   flex-direction: row;
 
@@ -32,7 +33,7 @@
   gap: 10px;
 }
 .inputHabitText {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 .inputHabitText h1 {
   font-weight: bold;
@@ -40,7 +41,8 @@
   line-height: 36px;
   letter-spacing: -0.75px;
 
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  color: #2b333c;
 }
 .inputHabitText span {
   font-weight: 400;
@@ -48,7 +50,8 @@
   line-height: 24px;
   letter-spacing: 0px;
 
-  background-color: darkmagenta;
+  /* background-color: darkmagenta; */
+  color: #576069;
 }
 .habbitOptions {
   display: flex;
@@ -96,7 +99,7 @@
 }
 .habitsContainer {
   width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
 
   display: flex;
   flex-direction: column;
@@ -104,7 +107,7 @@
 }
 .habit {
   width: 100%;
-  background-color: sienna;
+  /* background-color: sienna; */
   display: flex;
   flex-direction: row;
 
@@ -127,18 +130,22 @@
 }
 .habitDetail {
   width: 100%;
-  background-color: crimson;
+  /* background-color: crimson; */
 
   display: flex;
   flex-direction: column;
 
   gap: 8px;
+
+  color: #576069;
 }
 .habitDetail h2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
+
+  color: black;
 }
 .bar {
   width: 100%;
@@ -178,7 +185,7 @@
 }
 .habitsPageLeftBoxesContainer {
   width: 100%;
-  background-color: slateblue;
+  /* background-color: slateblue; */
 
   display: flex;
   flex-direction: row;
@@ -189,7 +196,7 @@
 
 .longStreak,
 .instractions {
-  background-color: seagreen;
+  /* background-color: seagreen; */
 
   padding: 32px;
 
@@ -222,40 +229,54 @@
 
 .habitsPageRight {
   width: 30%;
-  height: 100px;
-  background-color: blue;
+  height: fit-content;
+  background-color: #eff4fc;
+  /* background-color: red; */
+
+  border-radius: 50px;
+
+  color: black;
+
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
 }
 .insights {
-  background-color: darkgoldenrod;
+  /* background-color: darkgoldenrod; */
 
   display: flex;
   flex-direction: column;
 
   gap: 32px;
-
-  padding-left: 32px;
 }
 .insightsText {
-  background-color: blue;
+  /* background-color: blue; */
 
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
+
+  text-align: center;
 }
 .insightsAvg {
-  background-color: sienna;
+  /* background-color: sienna; */
 
   display: flex;
   flex-direction: row;
-  gap: 10px;
 
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
 
-  gap: 10px;
+  gap: 30px;
 }
 
 .insightsIncomplete,
@@ -269,8 +290,8 @@
   line-height: 16px;
   letter-spacing: 0.6px;
 
-  background-color: coral;
-
+  /* background-color: coral; */
+  white-space: nowrap;
   color: #576069;
 }
 .insightsIncomplete h1,
@@ -289,8 +310,37 @@
   align-items: center;
   justify-content: center;
 
-  background-color: darkgreen;
-  color: white;
+  /* background-color: darkgreen; */
+  color: black;
+  /* color: white; */
+}
+.moodCorrelation {
+  width: 100%;
+  background-color: #ffffff;
+
+  padding: 24px;
+  border-radius: 32px;
+}
+.moodCorrelationText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 1300px) {
+  .insightsAvg {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1285px) {
   .habitsPage {
@@ -321,10 +371,25 @@
   .habitDetailText span {
     font-size: 14px;
   }
+  .habitsPageRight {
+    padding: 16px;
+
+    gap: 20px;
+
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .habitsPageLeftBoxesContainer {
     flex-direction: column;
+  }
+  .moodCorrelationText {
+    flex-direction: column;
+    white-space: nowrap;
+
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -339,6 +404,20 @@
     width: 100%;
   }
   .habitsPageLeftBoxesContainer {
+    flex-direction: row;
+  }
+
+  .insightsAvg {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .habitsPageRight {
+    width: fit-content;
+  }
+  .moodCorrelationText {
     flex-direction: row;
   }
 }

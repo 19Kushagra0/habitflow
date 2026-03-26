@@ -1,5 +1,6 @@
 import styles from "./Habits.module.css";
 import Image from "next/image";
+import HabbitModal from "../../../components/ui/HabbitModal/HabbitModal";
 export default function Habits() {
   return (
     <div className={styles.habitsPage}>
@@ -114,7 +115,19 @@ export default function Habits() {
             </div>
           </div>
         </div>
+        <div className={styles.moodCorrelation}>
+          <div className={styles.moodCorrelationText}>
+            <h2>Mood Correlation</h2>
+            <Image
+              width={20}
+              height={20}
+              src="/icons/moodCorrelation.svg"
+              alt="Mood Correlation"
+            />
+          </div>
+        </div>
       </div>
+      <HabbitModal />
     </div>
   );
 }

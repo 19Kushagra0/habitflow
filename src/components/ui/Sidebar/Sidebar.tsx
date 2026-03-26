@@ -53,7 +53,7 @@ export default function Sidebar() {
             <h1 className={styles.navText}>Habits</h1>
           </Link>
 
-          <Link className={styles.navLink} href="/insight">
+          {/* <Link className={styles.navLink} href="/insight">
             <div className="">
               <svg
                 viewBox="0 0 22 17"
@@ -67,7 +67,7 @@ export default function Sidebar() {
               </svg>
             </div>
             <h1 className={styles.navText}>Insight</h1>
-          </Link>
+          </Link> */}
           <Link className={styles.navLink} href="/settings">
             <div className="">
               <svg
