@@ -13,24 +13,27 @@
   align-items: center;
   justify-content: center;
 
-  display: none;
+  /* display: none; */
 }
 .createHabbitModal {
   width: 615px;
-  background-color: teal;
+  /* background-color: teal; */
+  background-color: white;
 
   padding: 35px 32px;
 
   display: flex;
   flex-direction: column;
 
-  gap: 16px;
+  gap: 20px;
 
   border-radius: 24px;
 }
 .modalHeader {
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
+
+  color: #134e4a;
 
   display: flex;
   flex-direction: row;
@@ -45,21 +48,31 @@
   align-items: center;
 }
 .modalHeader button {
-  background-color: blue;
+  /* background-color: blue; */
   padding: 8px;
   border-radius: 100px;
 }
 
 .habitName {
   width: 100%;
-  background-color: green;
+
+  color: #576069;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  /* background-color: green; */
 
   display: flex;
   flex-direction: column;
+
+  gap: 10px;
 }
 .habitName input {
   width: 100%;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  background-color: #eff4fc;
 
   padding: 16px;
 
@@ -70,7 +83,7 @@
   outline: none;
 }
 .category {
-  background-color: brown;
+  /* background-color: brown; */
 
   display: flex;
   flex-direction: column;
@@ -83,7 +96,9 @@
   line-height: 24px;
   letter-spacing: 0.8px;
 
-  background-color: yellow;
+  /* background-color: yellow; */
+
+  color: #576069;
 }
 .category select {
   padding: 12px;
@@ -94,6 +109,11 @@
   background-color: #eff4fc;
 
   border-radius: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
 }
 /* .categoryWrapper {
   width: 100%;
@@ -143,11 +163,11 @@
 .icon {
   width: 24px;
   height: 24px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 .goalContainer {
   width: 100%;
-  background-color: darkblue;
+  /* background-color: darkblue; */
 
   display: flex;
   flex-direction: row;
@@ -157,7 +177,7 @@
   gap: 24px;
 }
 .frequency {
-  background-color: cyan;
+  /* background-color: cyan; */
 
   display: flex;
   flex-direction: column;
@@ -198,7 +218,7 @@
   color: #006a6c;
 }
 .goal {
-  background-color: darkmagenta;
+  /* background-color: darkmagenta; */
 
   display: flex;
   flex-direction: column;
@@ -209,9 +229,11 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.8px;
+
+  color: #576069;
 }
 .goalWrapper {
-  background-color: salmon;
+  /* background-color: salmon; */
 
   display: flex;
 
@@ -221,24 +243,28 @@
   min-width: 56px;
   max-width: 100px;
   /* width: fit-content; */
-  background-color: seagreen;
+  /* background-color: seagreen; */
 
   padding: 12px;
 
   border-radius: 24px;
 
   outline: none;
+
+  background-color: #eff4fc;
 }
 .goalWrapper select {
-  background-color: yellow;
+  /* background-color: yellow; */
   padding: 12px;
   padding-right: 86px;
 
   border-radius: 24px;
+
+  background-color: #eff4fc;
 }
 .reminder {
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
 
   display: flex;
   flex-direction: row;
@@ -246,7 +272,7 @@
   justify-content: space-between;
 }
 .reminderHeader {
-  background-color: blue;
+  /* background-color: blue; */
 
   display: flex;
   flex-direction: row;
@@ -256,7 +282,7 @@
   gap: 8px;
 }
 .time {
-  background-color: seagreen;
+  /* background-color: seagreen; */
 }
 .reminderHeader span {
   font-weight: bold;
@@ -275,7 +301,7 @@
   color: #576069;
 }
 .time {
-  background-color: seagreen;
+  /* background-color: seagreen; */
 
   font-weight: bold;
   font-size: 18px;
@@ -288,18 +314,18 @@
   color: #006a6c;
 }
 .notes {
-  background-color: salmon;
+  /* background-color: salmon; */
 
   display: flex;
   flex-direction: column;
 
   gap: 8px;
 
-  background-color: saddlebrown;
+  /* background-color: saddlebrown; */
   color: #576069;
 }
 .notes textarea {
-  background-color: seagreen;
+  /* background-color: seagreen; */
   color: #2b333c;
 
   padding: 12px;
@@ -308,6 +334,7 @@
 
   outline: none;
   resize: none;
+  background-color: #eff4fc;
 
   font-weight: 400;
   font-size: 16px;
@@ -316,7 +343,7 @@
 }
 .modalButton {
   width: 100%;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 
   display: flex;
   flex-direction: row;
@@ -336,7 +363,7 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: red;
+  /* background-color: red; */
 
   border-radius: 24px;
 }
@@ -374,8 +401,6 @@
   }
   .goalWrapper {
     width: 100%;
-  }
-  .goalWrapper input {
   }
   .goalWrapper select {
     width: 100%;
