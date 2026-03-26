@@ -1,0 +1,383 @@
+.createHabbitModalContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+.createHabbitModal {
+  width: 615px;
+  background-color: teal;
+
+  padding: 35px 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  border-radius: 24px;
+}
+.modalHeader {
+  width: 100%;
+  background-color: red;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+
+  align-items: center;
+}
+.modalHeader button {
+  background-color: blue;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+.habitName {
+  width: 100%;
+  background-color: green;
+
+  display: flex;
+  flex-direction: column;
+}
+.habitName input {
+  width: 100%;
+  background-color: blueviolet;
+
+  padding: 16px;
+
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  outline: none;
+}
+.category {
+  background-color: brown;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+.category span {
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+
+  background-color: yellow;
+}
+.category select {
+  padding: 12px;
+  outline: none;
+
+  color: #2b333c;
+
+  background-color: #eff4fc;
+
+  border-radius: 24px;
+}
+/* .categoryWrapper {
+  width: 100%;
+  background-color: tomato;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.categoryIcon {
+  min-width: 92px;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  background-color: #eff4fc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  font-weight: bolder;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+
+  gap: 4px;
+
+  color: #576069;
+
+  border: 2px solid #eff4fc;
+
+  cursor: pointer;
+}
+.categoryIcon:hover {
+  border: 2px solid #006a6c;
+  color: #006a6c;
+} */
+.icon {
+  width: 24px;
+  height: 24px;
+  background-color: chartreuse;
+}
+.goalContainer {
+  width: 100%;
+  background-color: darkblue;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  gap: 24px;
+}
+.frequency {
+  background-color: cyan;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #576069;
+
+  gap: 8px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+.frequencyWrapper {
+  background-color: #eff4fc;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 4px;
+  padding: 6px;
+
+  border-radius: 24px;
+}
+.frequencyWrapper button {
+  /* background-color: white; */
+  padding: 8px 40px;
+
+  border-radius: 24px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+.frequencyWrapper button:hover {
+  background-color: white;
+  color: #006a6c;
+}
+.goal {
+  background-color: darkmagenta;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+.goalWrapper {
+  background-color: salmon;
+
+  display: flex;
+
+  gap: 5px;
+}
+.goalWrapper input {
+  min-width: 56px;
+  max-width: 100px;
+  /* width: fit-content; */
+  background-color: seagreen;
+
+  padding: 12px;
+
+  border-radius: 24px;
+
+  outline: none;
+}
+.goalWrapper select {
+  background-color: yellow;
+  padding: 12px;
+  padding-right: 86px;
+
+  border-radius: 24px;
+}
+.reminder {
+  width: 100%;
+  background-color: red;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.reminderHeader {
+  background-color: blue;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 8px;
+}
+.time {
+  background-color: seagreen;
+}
+.reminderHeader span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+
+  color: #2b333c;
+}
+.reminderHeader p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+
+  color: #576069;
+}
+.time {
+  background-color: seagreen;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+
+  display: flex;
+
+  align-items: center;
+  color: #006a6c;
+}
+.notes {
+  background-color: salmon;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  background-color: saddlebrown;
+  color: #576069;
+}
+.notes textarea {
+  background-color: seagreen;
+  color: #2b333c;
+
+  padding: 12px;
+
+  border-radius: 24px;
+
+  outline: none;
+  resize: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.modalButton {
+  width: 100%;
+  background-color: rebeccapurple;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+
+  gap: 16px;
+
+  color: #576069;
+}
+.cancel {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: red;
+
+  border-radius: 24px;
+}
+.cancel:hover {
+  background-color: #eff4fc;
+}
+.submit {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: green;
+
+  border-radius: 24px;
+
+  background-color: #006a6c;
+  color: white;
+}
+@media screen and (max-width: 650px) {
+  .createHabbitModal {
+    height: 100%;
+    width: 100%;
+  }
+  .goalContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .frequencyWrapper {
+    width: fit-content;
+  }
+  .goalWrapper {
+    width: fit-content;
+  }
+  .createHabbitModal {
+    padding: 20px;
+  }
+  .goalWrapper {
+    width: 100%;
+  }
+  .goalWrapper input {
+  }
+  .goalWrapper select {
+    width: 100%;
+  }
+}
