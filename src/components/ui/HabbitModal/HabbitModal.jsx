@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HabbitModal.module.css";
+import Image from "next/image";
 
 export default function HabbitModal() {
   return (
@@ -108,7 +109,13 @@ export default function HabbitModal() {
         </div>
         <div className={styles.reminder}>
           <div className={styles.reminderHeader}>
-            <div className={styles.icon}></div>
+            <Image
+              src="/icons/Notification.svg"
+              alt="bell"
+              width={15}
+              height={15}
+              className={styles.icon}
+            />
             <div>
               <span>Daily Reminder</span>
               <p>We'll nudge you to stay on track</p>
