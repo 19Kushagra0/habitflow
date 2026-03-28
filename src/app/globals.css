@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #f7f9ff;
     --foreground: #ededed;
   }
 }
@@ -32,4 +32,10 @@ h3 {
 }
 button {
   cursor: pointer;
+}
+input {
+  outline: none;
+}
+select {
+  outline: none;
 }

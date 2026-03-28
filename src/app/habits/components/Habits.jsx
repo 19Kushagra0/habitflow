@@ -1,7 +1,14 @@
+"use client";
 import styles from "./Habits.module.css";
 import Image from "next/image";
 import HabbitModal from "../../../components/ui/HabbitModal/HabbitModal";
+import { useState } from "react";
+
 export default function Habits() {
+  const [habbitModal, setHabbitModal] = useState(false);
+  const [habits, setHabits] = useState([]);
+  console.log(habits);
+
   return (
     <div className={styles.habitsPage}>
       <div className={styles.habitsPageLeft}>
@@ -24,8 +31,12 @@ export default function Habits() {
                 />
               </svg>
               <h2>Sort</h2>
+              {/* <div className={styles.sortModalContainer}></div> */}
             </button>
-            <button className={styles.inputHabitButton}>
+            <button
+              onClick={() => setHabbitModal(true)}
+              className={styles.inputHabitButton}
+            >
               +<h2> New Habit</h2>
             </button>
           </div>
@@ -127,7 +138,13 @@ export default function Habits() {
           </div>
         </div>
       </div>
-      <HabbitModal />
+      {habbitModal && (
+        <HabbitModal
+          setHabbitModal={setHabbitModal}
+          setHabits={setHabits}
+          habits={habits}
+        />
+      )}
     </div>
   );
 }

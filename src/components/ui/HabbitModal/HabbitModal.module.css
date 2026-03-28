@@ -1,6 +1,7 @@
 .createHabbitModalContainer {
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
 
@@ -10,13 +11,15 @@
   z-index: 20;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* display: none; */
 }
 .createHabbitModal {
   width: 615px;
+
+  height: fit-content;
+  overflow-y: auto;
   /* background-color: teal; */
   background-color: white;
 
@@ -29,6 +32,7 @@
 
   border-radius: 24px;
 }
+
 .modalHeader {
   width: 100%;
   /* background-color: red; */
@@ -41,7 +45,7 @@
   justify-content: space-between;
 
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: 0px;
 
@@ -52,7 +56,9 @@
   padding: 8px;
   border-radius: 100px;
 }
-
+.modalHeader button:hover {
+  background-color: #eff4fc;
+}
 .habitName {
   width: 100%;
 
@@ -165,6 +171,15 @@
   height: 24px;
   /* background-color: chartreuse; */
 }
+.timeInput {
+  /* background-color: #006a6c; */
+  color: #006a6c;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  outline: none;
+}
 .goalContainer {
   width: 100%;
   /* background-color: darkblue; */
@@ -174,7 +189,7 @@
 
   justify-content: space-between;
 
-  gap: 24px;
+  gap: 8px;
 }
 .frequency {
   /* background-color: cyan; */
@@ -213,7 +228,7 @@
   line-height: 21px;
   letter-spacing: 0px;
 }
-.frequencyWrapper button:hover {
+.frequencyActive {
   background-color: white;
   color: #006a6c;
 }
@@ -256,7 +271,7 @@
 .goalWrapper select {
   /* background-color: yellow; */
   padding: 12px;
-  padding-right: 86px;
+  /* padding-right: 86px; */
 
   border-radius: 24px;
 
@@ -270,6 +285,9 @@
   flex-direction: row;
 
   justify-content: space-between;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .reminderHeader {
   /* background-color: blue; */
@@ -282,6 +300,7 @@
   gap: 8px;
 }
 .time {
+  width: fit-content;
   /* background-color: seagreen; */
 }
 .reminderHeader span {
@@ -313,6 +332,51 @@
   align-items: center;
   color: #006a6c;
 }
+
+.days {
+  width: 100%;
+  /* background-color: red; */
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+.daysLabel {
+  width: 100%;
+  /* background-color: blue; */
+
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+.daysWrapper {
+  /* background-color: blueviolet; */
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 1px;
+}
+.day,
+.dayActive {
+  color: black;
+  width: fit-content;
+  background-color: #eff4fc;
+  padding: 10px 15px;
+  border-radius: 100px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.dayActive {
+  background-color: #006a6c;
+  color: white;
+}
 .notes {
   /* background-color: salmon; */
 
@@ -328,7 +392,7 @@
   /* background-color: seagreen; */
   color: #2b333c;
 
-  padding: 12px;
+  padding: 18px;
 
   border-radius: 24px;
 
@@ -340,6 +404,11 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
+
+  line-height: 1.2;
+  min-height: 80px;
+  height: auto;
+  overflow: hidden;
 }
 .modalButton {
   width: 100%;
@@ -358,11 +427,13 @@
   gap: 16px;
 
   color: #576069;
+
+  padding-top: 10px;
 }
 .cancel {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   /* background-color: red; */
 
   border-radius: 24px;
@@ -372,8 +443,8 @@
 }
 .submit {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: green;
 
   border-radius: 24px;
@@ -381,10 +452,53 @@
   background-color: #006a6c;
   color: white;
 }
+
+@media screen and (max-width: 730px) {
+  .createHabbitModal {
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .modalHeader {
+    font-size: 16px;
+  }
+  .habitName {
+    font-size: 14px;
+  }
+  .category span {
+    font-size: 14px;
+  }
+  .category select {
+    font-size: 14px;
+  }
+  .frequency {
+    font-size: 14px;
+  }
+  .frequencyWrapper button {
+    font-size: 12px;
+  }
+  .goal {
+    font-size: 14px;
+  }
+  .reminderHeader span {
+    font-size: 12px;
+  }
+  .reminderHeader p {
+    font-size: 10px;
+  }
+  .time {
+    font-size: 16px;
+  }
+  .notes textarea {
+    font-size: 12px;
+  }
+  .modalButton {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 650px) {
   .createHabbitModal {
-    height: 100%;
     width: 100%;
+    height: 100vh;
   }
   .goalContainer {
     display: flex;
