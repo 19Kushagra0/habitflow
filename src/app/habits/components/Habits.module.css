@@ -1,6 +1,5 @@
 .habitsPage {
   width: 100%;
-  height: 200vh;
   background-color: red;
   background-color: #f7f9ff;
 
@@ -13,6 +12,8 @@
   padding-top: 110px;
 
   gap: 32px;
+
+  padding-bottom: 50px;
 }
 .habitsPageLeft {
   width: 70%;
@@ -88,6 +89,22 @@
   justify-content: center;
 
   gap: 10px;
+
+  position: relative;
+}
+.sortModalContainer {
+  width: 360px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  right: -120px;
+  z-index: 1000;
+}
+@media screen and (max-width: 535px) {
+  .sortModalContainer {
+    right: 0px;
+    left: 0px;
+  }
 }
 .inputHabitButton {
   background-color: #97f2f3;
@@ -437,5 +454,10 @@
   .inputHabitContainer {
     flex-direction: column;
     align-items: start;
+  }
+  .habitsPageRight {
+    width: 100%;
+    align-items: center;
+    /* background-color: red; */
   }
 }
